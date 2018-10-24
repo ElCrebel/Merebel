@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg3039" inkscape:export-xdpi="12" inkscape:export-filename="/home/orion/projects2/bitcoin/tx_mined.png" inkscape:version="0.48.0 r9654" inkscape:export-ydpi="12" sodipodi:docname="inout3.svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="120px" height="120px"
+	 viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
+<sodipodi:namedview  id="namedview3041" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-y="25" inkscape:window-height="1127" inkscape:pageshadow="2" inkscape:window-x="0" inkscape:current-layer="layer7" inkscape:pageopacity="0" inkscape:cy="67.287943" guidetolerance="10" inkscape:zoom="1" showgrid="false" bordercolor="#666666" inkscape:cx="87.12655" gridtolerance="10" objecttolerance="10" pagecolor="#ffffff" borderopacity="1">
+	</sodipodi:namedview>
+<g id="layer2" inkscape:groupmode="layer" inkscape:label="base" display="none">
+	<path id="path3053" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccccccccccc" display="inline" fill="#AFAFAF" d="
+		M45.375,17c-13.984,0.241-24.968,3.29-37.438,9.594c-8.992,21.872-6.681,46.393-1.969,69c26.191,13.153,55.595,12.978,81.75-0.219
+		c3.852-9.729,1.6-12.8,2.375-23.156c-6.176,0.205-12.964-4.531-15.906,3.031c-1.484,4.473,1.932,7.396-5.031,8.094
+		c-16.132,5.193-31.435,5.797-47.281-1.063C19.715,68.368,18.6,53.657,22.5,40c16.868-6.642,33.121-6.12,50.031-0.156
+		c1.285,5.855,1.574,5.763,2.375,11.688c5.558,0.439,14.738,1.804,16.406-5.531c0.541-9.992-1.94-14.375-4.125-20.313
+		C73.71,21.035,59.804,16.699,45.375,17z"/>
+</g>
+<g id="layer3" inkscape:groupmode="layer" inkscape:label="arrow_out" display="none">
+	<path id="path3844" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccscccc" display="inline" fill="#6E6E6E" d="
+		M63.983,65.481l0.269-9.515l36.16-0.194l-7.414-8.758l3.799-7.573c0,0,23.438,20.797,22.5,21.185
+		c-0.938,0.389-23.17,22.738-23.17,22.738l-3.129-8.932l7.549-8.564L63.983,65.481z"/>
+</g>
+<g id="layer4" inkscape:groupmode="layer" inkscape:label="arrow_in" display="none">
+	<path id="path4080" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccscccc" display="inline" fill="#6E6E6E" d="
+		M99.287,65.481l-0.268-9.515l-36.161-0.194l7.769-6.283l-4.152-9.28c0,0-23.438,20.029-22.5,20.417
+		c0.938,0.389,23.17,20.971,23.17,20.971l3.482-9.639l-7.902-6.09L99.287,65.481z"/>
+</g>
+<g>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCE900" d="M65.531,12.168c-1.734,0.943-3.33,1.772-4.889,2.666
+		C49.04,21.487,39.089,30.165,30.028,39.916C19.351,51.405,10.355,64.099,2.989,77.946c-0.129,0.244-0.278,0.477-0.69,0.667
+		c0.212-2.69,0.33-5.394,0.653-8.071c1.754-14.534,7.103-27.63,15.915-39.31c6.975-9.244,15.464-16.885,24.983-23.416
+		c0.358-0.246,0.942-0.381,1.36-0.29c6.582,1.438,13.154,2.919,19.729,4.396C65.082,11.955,65.217,12.036,65.531,12.168z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCE900" d="M103.462,54.149c-4.52-4.514-9.206-9.19-13.888-13.871
+		c-4.243-4.244-8.481-8.492-12.722-12.738c-0.401-0.401-0.816-0.696-0.51-1.456c2.655-6.589,5.257-13.199,7.802-19.621
+		c11.206,11.182,22.437,22.387,33.557,33.484C113.104,44.533,108.29,49.335,103.462,54.149z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCE900" d="M20.917,113.537c-2.418-2.464-4.76-4.851-7.018-7.15
+		c22.376-22.466,44.871-45.049,67.257-67.523c2.163,2.157,4.291,4.278,6.51,6.491C64.701,67.153,41.86,89.428,20.917,113.537z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCE900" d="M109.016,113.306C95.459,99.166,81.838,84.96,68.301,70.841
+		c1.865-2.001,3.881-4.165,5.911-6.344c14.002,14.084,27.879,28.042,41.661,41.906C113.64,108.651,111.264,111.044,109.016,113.306z
+		"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCE900" d="M36.586,40.47c2.177-2.432,4.273-4.771,6.312-7.046
+		c6.314,6.347,12.374,12.438,18.325,18.419c-1.951,1.972-4.062,4.107-6.238,6.307C48.838,52.243,42.639,46.285,36.586,40.47z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCE900" d="M108.99,11.522c2.243,2.251,4.634,4.649,7.09,7.114
+		c-2.08,1.958-4.242,3.993-6.316,5.945c-2.371-2.377-4.695-4.709-6.916-6.937C104.777,15.722,106.873,13.634,108.99,11.522z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#DCE900" d="M18.971,23.657c-1.786-1.702-3.538-3.372-5.219-4.975
+		c2.458-2.457,4.844-4.844,7.151-7.15c1.533,1.558,3.173,3.225,4.863,4.94C23.676,18.683,21.389,21.101,18.971,23.657z"/>
+</g>
+</svg>
