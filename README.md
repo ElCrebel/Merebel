@@ -1,4 +1,4 @@
-![alt text](https://media.discordapp.net/attachments/452473827432071199/495672409207210008/red.png?width=433&height=419)
+![alt text](https://cdn.discordapp.com/attachments/452473827432071199/518453112449662986/unknown.png)
 
 ### Merebel is a fork of [PIVX](https://github.com/PIVX-Project/PIVX) that forked [Dash](https://github.com/dashpay/dash) that forked [Bitcoin](https://github.com/bitcoin/bitcoinp)
 
