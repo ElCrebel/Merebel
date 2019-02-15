@@ -2762,7 +2762,10 @@ Value importzerocoins(const Array& params, bool fHelp)
     for (const Value &val : arrMints) {
         const Object &o = val.get_obj();
 
-        int d = ParseInt(o, "d");
+                const UniValue& vDenom = find_value(o, "d");
+        if (!vDenom.isNum())
+            throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, missing d key");
+        int d = vDenom.get_int();
         if (d < 0)
             throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, d must be positive");
 
@@ -2772,11 +2775,11 @@ Value importzerocoins(const Array& params, bool fHelp)
         CBigNum bnRandom = CBigNum(find_value(o, "r").get_str());
         uint256 txid(find_value(o, "t").get_str());
 
-        int nHeight = ParseInt(o, "h");
+        int nHeight = find_value(o, "h").get_int();
         if (nHeight < 0)
             throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, h must be positive");
 
-        bool fUsed = ParseBool(o, "u");
+        bool fUsed = find_value(o, "u").get_bool();
         CZerocoinMint mint(denom, bnValue, bnRandom, bnSerial, fUsed);
         mint.SetTxHash(txid);
         mint.SetHeight(nHeight);
