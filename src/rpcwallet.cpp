@@ -2762,10 +2762,7 @@ Value importzerocoins(const Array& params, bool fHelp)
     for (const Value &val : arrMints) {
         const Object &o = val.get_obj();
 
-                const UniValue& vDenom = find_value(o, "d");
-        if (!vDenom.isNum())
-            throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, missing d key");
-        int d = vDenom.get_int();
+        int d = ParseInt(o, "d");
         if (d < 0)
             throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid parameter, d must be positive");
 
