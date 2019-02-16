@@ -2134,10 +2134,14 @@ int64_t GetBlockValue(int nHeight)
 		nSubsidy = 1 * COIN;
     } else if(nHeight <= 45000) { //PoS phase
 		nSubsidy = 10 * COIN; // "instamine"
+    } else if(nHeight <= 151000 ) {
+        nSubsidy = 7 * COIN;
+    } else if(nHeight <= 230000 ) {
+        nSubsidy = 12 * COIN;
     } else if(nHeight <= 2100000 ) {
-		nSubsidy = 7 * COIN;
+		nSubsidy = 14 * COIN;
     } else if(nHeight <= 3100000 ) { 
-		nSubsidy = 5 * COIN;
+		nSubsidy = 7 * COIN;
     } else if(nHeight <= 4100000 ) { 
 		nSubsidy = 4 * COIN;
     } else if(nHeight <= 5250000 ) { 
