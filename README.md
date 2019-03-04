@@ -6,18 +6,18 @@
 # MasterRebelCore integration/staging repository
 
 
-Merebel MasterRebelCore is a cutting edge cryptocurrency, with many features not available in most other cryptocurrencies.
+Merebel is a cutting edge privacy Masternode cryptocurrency.
+
 - Anonymized transactions using zerocoin technology.
-- Fast transactions featuring guaranteed zero confirmation transactions, PIVX named it _SwiftX_.
-- We have equipped Merebel with the new algorithm Lyra2z for excellent performance and power effecient gpu mining.
+- Fast transactions featuring guaranteed zero confirmation transactions.
+- We have equipped Merebel with the algorithm Lyra2z for excellent performance and power efficiency.
 - Decentralized blockchain voting providing for consensus based advancement of the current Masternode
   technology used to secure the network and provide the above features, each Masternode is secured
   with a collateral of 3K MERI.
 
-MasterRebelCoin is a privacy new edge cryptocurrency with a real usecase! The working product is soon avaible for everyone.
-The CREBELLION is a crypto rebellion that wants to make cryptocurrencies useful for everyone.
-There are many new projects already under development where Merebel is integrated!
-In addition, there is a Masternode ranking reward system where you can earn MasterRebelShares.
+Merebel is the first cryptocurrency to implement a bank and debitcard system based on Masternode rewards!
+
+Merebel Masternode hosting Platform > Merebel Exchange > Merebel Bank 3.0 > MasterMERIcard 
 
 More information at [merebel.org](http://www.merebel.org) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=4712850.0)
 
@@ -30,14 +30,6 @@ More information at [merebel.org](http://www.merebel.org) Visit our ANN thread a
 <tr><td>Premine</td><td>5%</td></tr>
 <tr><td>max. Supply</td><td>30.000.000 MERI</td></tr>
 </table>
-
-
-### Reward Distribution
-
-
-![alt text](https://cdn.discordapp.com/attachments/452473827432071199/518453112449662986/unknown.png)
-
-
 
 
 
