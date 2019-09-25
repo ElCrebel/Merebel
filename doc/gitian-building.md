@@ -1,9 +1,9 @@
 Gitian building
 ================
 
-*Setup instructions for a gitian build of Merebel using a Debian VM or physical system.*
+*Setup instructions for a gitian build of MEREBEL using a Debian VM or physical system.*
 
-Gitian is the deterministic build process that is used to build the Merebel
+Gitian is the deterministic build process that is used to build the MEREBEL
 Core executables. It provides a way to be reasonably sure that the
 executables are really built from source on GitHub. It also makes sure that
 the same, tested dependencies are used and statically built into the executable.
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing gitian](#installing-gitian)
 - [Setting up gitian images](#setting-up-gitian-images)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Merebel](#building-Merebel)
+- [Building MEREBEL](#building-Merebel)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -281,7 +281,7 @@ Clone the git repositories for Merebel and gitian and then checkout the Merebel 
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/eastcoastcrypto/Merebel.git
+git clone https://github.com/Merebel-crypto/Merebel.git
 cd Merebel
 git checkout v${VERSION}
 cd ..
@@ -326,10 +326,10 @@ under 'Fetch and build inputs' to install sources which require manual intervent
 the next step: 'Seed the Gitian sources cache', which will fetch all necessary source files allowing
 for gitian to work offline.
 
-Building Merebel
+Building MEREBEL
 ----------------
 
-To build Merebel (for Linux, OSX and Windows) just follow the steps under 'perform
+To build MEREBEL (for Linux, OSX and Windows) just follow the steps under 'perform
 gitian builds' in [doc/release-process.md](release-process.md) in the Merebel repository.
 
 This may take a long time as it also builds the dependencies needed for each descriptor.
@@ -350,7 +350,7 @@ Output from `gbuild` will look something like
     remote: Total 35606 (delta 0), reused 0 (delta 0)
     Receiving objects: 100% (35606/35606), 26.52 MiB | 4.28 MiB/s, done.
     Resolving deltas: 100% (25724/25724), done.
-    From https://github.com/eastcoastcrypto/Merebel
+    From https://github.com/Merebel-crypto/Merebel
     ... (new tags, new branch etc)
     --- Building for precise x86_64 ---
     Stopping target if it is up
@@ -377,7 +377,7 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/eastcoastcrypto/Merebel.git
+URL=https://github.com/crowning-/Merebel.git
 COMMIT=b616fb8ef0d49a919b72b0388b091aaec5849b96
 ./bin/gbuild --commit Merebel=${COMMIT} --url Merebel=${URL} ../Merebel/contrib/gitian-descriptors/gitian-linux.yml
 ./bin/gbuild --commit Merebel=${COMMIT} --url Merebel=${URL} ../Merebel/contrib/gitian-descriptors/gitian-win.yml
@@ -408,6 +408,6 @@ Uploading signatures (not yet implemented)
 ---------------------
 
 In the future it will be possible to push your signatures (both the `.assert` and `.assert.sig` files) to the
-[eastcoastcrypto/gitian.sigs](https://github.com/eastcoastcrypto/gitian.sigs/) repository, or if that's not possible to create a pull
+[Merebel/gitian.sigs](https://github.com/Merebel-crypto/gitian.sigs/) repository, or if that's not possible to create a pull
 request.
 There will be an official announcement when this repository is online.

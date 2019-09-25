@@ -1,11 +1,12 @@
 Sample configuration files for:
-
-SystemD: jiyod.service
-Upstart: jiyod.conf
-OpenRC:  jiyod.openrc
-         jiyod.openrcconf
-CentOS:  jiyod.init
-
+```
+SystemD: Merebeld.service
+Upstart: Merebeld.conf
+OpenRC:  Merebeld.openrc
+         Merebeld.openrcconf
+CentOS:  Merebeld.init
+macOS:    org.Merebel.Merebeld.plist
+```
 have been made available to assist packagers in creating node packages here.
 
 See doc/init.md for more information.

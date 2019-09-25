@@ -1,9 +1,9 @@
-// Copyright (c) 2017 The PIVX developers
+// Copyright (c) 2017 The MEREBEL developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef MERI_CSPORKDB_H
-#define MERI_CSPORKDB_H
+#ifndef MEREBEL_CSPORKDB_H
+#define MEREBEL_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //MERI_CSPORKDB_H
+#endif //MEREBEL_CSPORKDB_H

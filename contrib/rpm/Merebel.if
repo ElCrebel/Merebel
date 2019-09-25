@@ -1,0 +1,157 @@
+
+## <summary>policy for Merebel</summary>
+
+
+########################################
+## <summary>
+##	Transition to Merebel.
+## </summary>
+## <param name="domain">
+## <summary>
+##	Domain allowed to transition.
+## </summary>
+## </param>
+#
+interface(`Merebel_domtrans',`
+	gen_require(`
+		type Merebel_t, Merebel_exec_t;
+	')
+
+	corecmd_search_bin($1)
+	domtrans_pattern($1, Merebel_exec_t, Merebel_t)
+')
+
+
+########################################
+## <summary>
+##	Execute Merebel server in the Merebel domain.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`Merebel_initrc_domtrans',`
+	gen_require(`
+		type Merebel_initrc_exec_t;
+	')
+
+	init_labeled_script_domtrans($1, Merebel_initrc_exec_t)
+')
+
+
+########################################
+## <summary>
+##	Search Merebel lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`Merebel_search_lib',`
+	gen_require(`
+		type Merebel_var_lib_t;
+	')
+
+	allow $1 Merebel_var_lib_t:dir search_dir_perms;
+	files_search_var_lib($1)
+')
+
+########################################
+## <summary>
+##	Read Merebel lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`Merebel_read_lib_files',`
+	gen_require(`
+		type Merebel_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	read_files_pattern($1, Merebel_var_lib_t, Merebel_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage Merebel lib files.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`Merebel_manage_lib_files',`
+	gen_require(`
+		type Merebel_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_files_pattern($1, Merebel_var_lib_t, Merebel_var_lib_t)
+')
+
+########################################
+## <summary>
+##	Manage Merebel lib directories.
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+#
+interface(`Merebel_manage_lib_dirs',`
+	gen_require(`
+		type Merebel_var_lib_t;
+	')
+
+	files_search_var_lib($1)
+	manage_dirs_pattern($1, Merebel_var_lib_t, Merebel_var_lib_t)
+')
+
+
+########################################
+## <summary>
+##	All of the rules required to administrate
+##	a Merebel environment
+## </summary>
+## <param name="domain">
+##	<summary>
+##	Domain allowed access.
+##	</summary>
+## </param>
+## <param name="role">
+##	<summary>
+##	Role allowed access.
+##	</summary>
+## </param>
+## <rolecap/>
+#
+interface(`Merebel_admin',`
+	gen_require(`
+		type Merebel_t;
+		type Merebel_initrc_exec_t;
+		type Merebel_var_lib_t;
+	')
+
+	allow $1 Merebel_t:process { ptrace signal_perms };
+	ps_process_pattern($1, Merebel_t)
+
+	Merebel_initrc_domtrans($1)
+	domain_system_change_exemption($1)
+	role_transition $2 Merebel_initrc_exec_t system_r;
+	allow $2 system_r;
+
+	files_search_var_lib($1)
+	admin_pattern($1, Merebel_var_lib_t)
+
+')
+

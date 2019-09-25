@@ -1,0 +1,81 @@
+policy_module(Merebel, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type Merebel_t;
+type Merebel_exec_t;
+init_daemon_domain(Merebel_t, Merebel_exec_t)
+
+permissive Merebel_t;
+
+type Merebel_initrc_exec_t;
+init_script_file(Merebel_initrc_exec_t)
+
+type Merebel_conf_t;
+files_type(Merebel_conf_t)
+
+type Merebel_var_lib_t;
+files_type(Merebel_var_lib_t)
+
+type Merebel_var_run_t;
+files_type(Merebel_var_run_t)
+
+type Merebel_port_t;
+corenet_port(Merebel_port_t)
+
+########################################
+#
+# Merebel local policy
+#
+allow Merebel_t self:process { fork };
+
+allow Merebel_t self:fifo_file rw_fifo_file_perms;
+allow Merebel_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(Merebel_t, Merebel_conf_t, Merebel_conf_t)
+manage_files_pattern(Merebel_t, Merebel_conf_t, Merebel_conf_t)
+
+manage_dirs_pattern(Merebel_t, Merebel_var_lib_t, Merebel_var_lib_t)
+manage_files_pattern(Merebel_t, Merebel_var_lib_t, Merebel_var_lib_t)
+files_var_lib_filetrans(Merebel_t, Merebel_var_lib_t, { dir file })
+
+manage_dirs_pattern(Merebel_t, Merebel_var_run_t, Merebel_var_run_t)
+manage_files_pattern(Merebel_t, Merebel_var_run_t, Merebel_var_run_t)
+
+sysnet_dns_name_resolve(Merebel_t)
+corenet_all_recvfrom_unlabeled(Merebel_t)
+
+allow Merebel_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(Merebel_t)
+corenet_tcp_sendrecv_generic_node(Merebel_t)
+corenet_tcp_sendrecv_all_ports(Merebel_t)
+corenet_tcp_bind_generic_node(Merebel_t)
+
+gen_require(`
+    type Merebel_port_t;
+')
+allow Merebel_t Merebel_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type Merebel_port_t;
+')
+allow Merebel_t Merebel_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(Merebel_t)
+
+files_read_etc_files(Merebel_t)
+
+miscfiles_read_localization(Merebel_t)
+
+sysnet_dns_name_resolve(Merebel_t)
+
+allow Merebel_t Merebel_exec_t:file execute_no_trans;
+allow Merebel_t self:process setsched;
+corecmd_exec_ls(Merebel_t)
+corenet_tcp_connect_http_port(Merebel_t)
+dev_read_urand(Merebel_t)
+fs_getattr_xattr_fs(Merebel_t)
+kernel_read_system_state(Merebel_t)

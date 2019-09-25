@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your Merebel addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces Merebel per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your MEREBEL addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces MEREBEL per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your Merebel addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces Merebel per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your MEREBEL addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces MEREBEL per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>Merebel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIPORTs from being stolen by malware infecting your computer.</source>
-        <translation>Merebel es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus MERIPORT de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>MEREBEL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIs from being stolen by malware infecting your computer.</source>
+        <translation>MEREBEL es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus MERI de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERIPORT&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES MERIPORTS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERI&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES MERIS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -207,6 +207,9 @@
         <source>Wallet passphrase was successfully changed.</source>
         <translation>La contrasenya del moneder ha estat canviada amb èxit.</translation>
     </message>
+    </context>
+<context>
+    <name>BanTableModel</name>
     </context>
 <context>
     <name>Bip38ToolDialog</name>
@@ -418,12 +421,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     <message>
-        <source>Send coins to a Merebel address</source>
-        <translation>Envia monedes a una adreça Merebel</translation>
+        <source>Send coins to a MEREBEL address</source>
+        <translation>Envia monedes a una adreça MEREBEL</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -434,8 +437,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Merebel Core</source>
-        <translation>&amp;Sobre Merebel Core</translation>
+        <source>&amp;About MEREBEL Core</source>
+        <translation>&amp;Sobre MEREBEL Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,12 +461,8 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>Merebel Core client</source>
-        <translation>Client Merebel core</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n active connection(s) to Merebel network</source>
-        <translation><numerusform>%n connexió activa a la xarxa Merebel</numerusform><numerusform>%n connexions actives a la xarxa Merebel</numerusform></translation>
+        <source>MEREBEL Core client</source>
+        <translation>Client MEREBEL core</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -473,25 +472,9 @@
         <source>Up to date</source>
         <translation>Actualitzat</translation>
     </message>
-    <message numerus="yes">
-        <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n hores</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n day(s)</source>
-        <translation><numerusform>%n dia</numerusform><numerusform>%n dies</numerusform></translation>
-    </message>
-    <message numerus="yes">
-        <source>%n week(s)</source>
-        <translation><numerusform>%n setmana</numerusform><numerusform>%n setmanes</numerusform></translation>
-    </message>
     <message>
         <source>%1 and %2</source>
         <translation>%1 i %2</translation>
-    </message>
-    <message numerus="yes">
-        <source>%n year(s)</source>
-        <translation><numerusform>%n any</numerusform><numerusform>%n anys</numerusform></translation>
     </message>
     <message>
         <source>Error</source>
@@ -533,7 +516,7 @@
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;locked&lt;/b&gt;</source>
         <translation>El moneder està &lt;b&gt;encriptat&lt;/b&gt; i bloquejat&lt;/b&gt;</translation>
     </message>
-</context>
+    </context>
 <context>
     <name>BlockExplorer</name>
     <message>
@@ -633,6 +616,10 @@
     <message>
         <source>Received with address</source>
         <translation>Rebut amb l'adreça</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipus</translation>
     </message>
     <message>
         <source>Date</source>
@@ -767,6 +754,10 @@
         <translation>Aquesta etiqueta es posa vermella si la prioritat és més petita que "mitjana"</translation>
     </message>
     <message>
+        <source>This label turns red, if any recipient receives an amount smaller than %1.</source>
+        <translation>Aquesta etiqueta es posa vermella si algun destinatari rep un import inferior a l' %1.</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(sense etiqueta)</translation>
     </message>
@@ -814,8 +805,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Merebel address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça Merebel vàlida.</translation>
+        <source>The entered address "%1" is not a valid MEREBEL address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça MEREBEL vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -854,22 +845,33 @@
     </message>
 </context>
 <context>
+    <name>GovernancePage</name>
+    <message>
+        <source>Form</source>
+        <translation>Formulari</translation>
+    </message>
+    <message>
+        <source>0</source>
+        <translation>0</translation>
+    </message>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
         <source>version</source>
         <translation>versió</translation>
     </message>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Merebel Core</source>
-        <translation>Sobre Merebel Core</translation>
+        <source>About MEREBEL Core</source>
+        <translation>Sobre MEREBEL Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +917,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to Merebel Core.</source>
-        <translation>Benvingut a Merebel Core.</translation>
+        <source>Welcome to MEREBEL Core.</source>
+        <translation>Benvingut a MEREBEL Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Merebel Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del Merebel Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where MEREBEL Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del MEREBEL Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +933,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -956,10 +958,6 @@
     <message>
         <source>Form</source>
         <translation>Formulari</translation>
-    </message>
-    <message>
-        <source>My Masternodes</source>
-        <translation>Els meus Masternodes</translation>
     </message>
     <message>
         <source>Alias</source>
@@ -1093,81 +1091,27 @@
         <translation>Activa</translation>
     </message>
     <message>
-        <source>The entered address:
-</source>
-        <translation>L'adreça introduïda:
-</translation>
+        <source>(no label)</source>
+        <translation>(sense etiqueta)</translation>
     </message>
     <message>
         <source>Please Enter 1 - 100 for percent.</source>
         <translation>Si us plau introdueix 1 - 100 per al percentatge</translation>
     </message>
-    <message>
-        <source>MultiSend Vector
-</source>
-        <translation>Vector MultiSend
-</translation>
-    </message>
-    <message>
-        <source>Removed </source>
-        <translation>Eliminat</translation>
-    </message>
-    <message>
-        <source>Could not locate address
-</source>
-        <translation>No s'ha trobat l'adreça
-</translation>
-    </message>
 </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MultisigDialog</name>
     <message>
-        <source>Configure Obfuscation</source>
-        <translation>Configura ofuscació</translation>
+        <source>Status:</source>
+        <translation>Estat:</translation>
     </message>
     <message>
-        <source>Basic Privacy</source>
-        <translation>Privacitat bàsica</translation>
+        <source>0</source>
+        <translation>0</translation>
     </message>
     <message>
-        <source>High Privacy</source>
-        <translation>Privacitat alta</translation>
-    </message>
-    <message>
-        <source>Maximum Privacy</source>
-        <translation>Privacitat màxima</translation>
-    </message>
-    <message>
-        <source>Please select a privacy level.</source>
-        <translation>Si us plau, selecciona un nivell de privacitat.</translation>
-    </message>
-    <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MERIPORT</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 MERIPORT</translation>
-    </message>
-    <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MERIPORT</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 MERIPORT</translation>
-    </message>
-    <message>
-        <source>Use 16 separate masternodes</source>
-        <translation>Utilitza 16 masternodes diferents</translation>
-    </message>
-    <message>
-        <source>This option is the quickest and will cost about ~0.025 MERIPORT to anonymize 10000 MERIPORT</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 MERIPORT per anonimitzar 10000 MERIPORT</translation>
-    </message>
-    <message>
-        <source>This option is moderately fast and will cost about 0.05 MERIPORT to anonymize 10000 MERIPORT</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 MERIPORT per anonimitzar 10000 MERIPORT</translation>
-    </message>
-    <message>
-        <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
-        <translation>Aquesta és l'opció més lenta però més segura. Usar l'anonimitzat màxim té un cost de</translation>
-    </message>
-    <message>
-        <source>Obfuscation Configuration</source>
-        <translation>Configuració de l'ofuscació</translation>
+        <source>Amount:</source>
+        <translation>Import:</translation>
     </message>
     </context>
 <context>
@@ -1208,8 +1152,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Merebel after logging in to the system.</source>
-        <translation>Inicia Merebel automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start MEREBEL after logging in to the system.</source>
+        <translation>Inicia MEREBEL automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1271,18 +1215,6 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>MERIPORT:</source>
-        <translation>MERIPORT:</translation>
-    </message>
-    <message>
-        <source>zMERIPORT:</source>
-        <translation>zMERIPORT:</translation>
-    </message>
-    <message>
-        <source>0 %</source>
-        <translation>0 %</translation>
-    </message>
-    <message>
         <source>Recent transactions</source>
         <translation>Transaccions recents</translation>
     </message>
@@ -1304,36 +1236,20 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>Zerocoin MERIPORT (zMERIPORT)</source>
-        <translation>Zerocoin MERIPORT (zMERIPORT)</translation>
-    </message>
-    <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zMERIPORT</source>
-        <translation>zMERIPORT</translation>
-    </message>
-    <message>
-        <source>0.000 000 00 MERIPORT</source>
-        <translation>0.000 000 00 MERIPORT</translation>
+        <source>zMERI</source>
+        <translation>zMERI</translation>
     </message>
     <message>
         <source>Reset</source>
         <translation>Restableix</translation>
     </message>
     <message>
-        <source>Quantity:</source>
-        <translation>Quantitat:</translation>
-    </message>
-    <message>
-        <source>Amount:</source>
-        <translation>Import:</translation>
-    </message>
-    <message>
-        <source>0 zMERIPORT</source>
-        <translation>0 zMERIPORT</translation>
+        <source>0 zMERI</source>
+        <translation>0 zMERI</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1350,6 +1266,10 @@
     <message>
         <source>Priority:</source>
         <translation>Prioritat:</translation>
+    </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>EtiquetaDeText</translation>
     </message>
     <message>
         <source>Fee:</source>
@@ -1371,14 +1291,9 @@
         <source>Change:</source>
         <translation>Canvi:</translation>
     </message>
-    <message>
-        <source>Copy quantity</source>
-        <translation>Copia la quantitat</translation>
-    </message>
-    <message>
-        <source>Copy amount</source>
-        <translation>Copia l'import</translation>
-    </message>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     </context>
 <context>
     <name>QObject</name>
@@ -1410,7 +1325,11 @@
         <source>%1 ms</source>
         <translation>%1 ms</translation>
     </message>
-</context>
+    <message>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
+    </message>
+    </context>
 <context>
     <name>QRImageWidget</name>
     <message>
@@ -1528,6 +1447,10 @@
         <translation>&amp;Missatge:</translation>
     </message>
     <message>
+        <source>A&amp;mount:</source>
+        <translation>I&amp;mport:</translation>
+    </message>
+    <message>
         <source>Remove</source>
         <translation>Elimina</translation>
     </message>
@@ -1542,6 +1465,10 @@
     <message>
         <source>Copy amount</source>
         <translation>Copia l'import</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copia l'adreça</translation>
     </message>
 </context>
 <context>
@@ -1590,6 +1517,10 @@
         <translation>Missatge</translation>
     </message>
     <message>
+        <source>Address</source>
+        <translation>Adreça</translation>
+    </message>
+    <message>
         <source>Amount</source>
         <translation>Import</translation>
     </message>
@@ -1630,7 +1561,7 @@
     </message>
     <message>
         <source>After Fee:</source>
-        <translation>Després de la comissió:</translation>
+        <translation>Amb comissió:</translation>
     </message>
     <message>
         <source>Change:</source>
@@ -1719,8 +1650,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Merebel Core is shutting down...</source>
-        <translation>Merebel Core s'està tancant...</translation>
+        <source>MEREBEL Core is shutting down...</source>
+        <translation>MEREBEL Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1716,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1892,10 +1823,6 @@
         <translation>Aquest any</translation>
     </message>
     <message>
-        <source>Obfuscated</source>
-        <translation>Ofuscat</translation>
-    </message>
-    <message>
         <source>Copy address</source>
         <translation>Copia l'adreça</translation>
     </message>
@@ -1969,7 +1896,7 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZMeriControlDialog</name>
     <message>
         <source>Quantity</source>
         <translation>Quantitat</translation>
@@ -1979,23 +1906,15 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zPhr</source>
-        <translation>zPhr</translation>
+        <source>zMERI</source>
+        <translation>zMERI</translation>
     </message>
     </context>
 <context>
     <name>Merebel-core</name>
     <message>
-        <source>Can't mix while sync in progress.</source>
-        <translation>No es pot mesclar mentre s'està sincronitzant.</translation>
-    </message>
-    <message>
         <source>Connection options:</source>
         <translation>Opcions de connexió:</translation>
-    </message>
-    <message>
-        <source>Error connecting to Masternode.</source>
-        <translation>Error connectant al Masternode.</translation>
     </message>
     <message>
         <source>Error</source>
@@ -2022,22 +1941,6 @@
         <translation>S'està carregant el moneder...</translation>
     </message>
     <message>
-        <source>Masternode:</source>
-        <translation>Masternode:</translation>
-    </message>
-    <message>
-        <source>Mixing in progress...</source>
-        <translation>Mescla en curs...</translation>
-    </message>
-    <message>
-        <source>No Masternodes detected.</source>
-        <translation>No s'han detectat masternodes.</translation>
-    </message>
-    <message>
-        <source>No compatible Masternode found.</source>
-        <translation>No s'han trobat masternodes compatibles.</translation>
-    </message>
-    <message>
         <source>Options:</source>
         <translation>Opcions:</translation>
     </message>
@@ -2050,18 +1953,6 @@
         <translation>S'està reescanejant...</translation>
     </message>
     <message>
-        <source>Submitted following entries to masternode: %u / %d</source>
-        <translation>S'ha enviat les següents entrades al masternode: %u /%d</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting for more entries ( %u / %d ) %s</source>
-        <translation>Enviat al masternode, esperant més entrades ( %u / %d ) %s</translation>
-    </message>
-    <message>
-        <source>Submitted to masternode, waiting in queue %s</source>
-        <translation>Enviat al masternode, esperant a la cua %s</translation>
-    </message>
-    <message>
         <source>Synchronization failed</source>
         <translation>La sincronització ha fallat</translation>
     </message>
@@ -2070,20 +1961,12 @@
         <translation>Sincronització finalitzada</translation>
     </message>
     <message>
-        <source>Transaction not valid.</source>
-        <translation>Transacció no vàlida.</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Verificant blocs...</translation>
     </message>
     <message>
         <source>Verifying wallet...</source>
         <translation>Verificant moneder...</translation>
-    </message>
-    <message>
-        <source>Wallet is locked.</source>
-        <translation>El moneder està bloquejat.</translation>
     </message>
     <message>
         <source>Warning</source>

@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 #
-# Use the raw transactions API to spend JIYOs received on particular addresses,
+# Use the raw transactions API to spend MERIs received on particular addresses,
 # and send any change back to that same address.
 #
 # Example usage:
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a jiyod or jiyo-Qt running
+# Assumes it will talk to a Merebeld or Merebel-Qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -33,15 +33,15 @@ def check_json_precision():
         raise RuntimeError("JSON encode/decode loses precision")
 
 def determine_db_dir():
-    """Return the default location of the jiyo data directory"""
+    """Return the default location of the Merebel data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/MERI/")
+        return os.path.expanduser("~/Library/Application Support/MEREBEL/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "MERI")
-    return os.path.expanduser("~/.jiyo")
+        return os.path.join(os.environ['APPDATA'], "MEREBEL")
+    return os.path.expanduser("~/.Merebel")
 
 def read_bitcoin_config(dbdir):
-    """Read the jiyo.conf file from dbdir, returns dictionary of settings"""
+    """Read the Merebel.conf file from dbdir, returns dictionary of settings"""
     from ConfigParser import SafeConfigParser
 
     class FakeSecHead(object):
@@ -59,20 +59,20 @@ def read_bitcoin_config(dbdir):
                 return s
 
     config_parser = SafeConfigParser()
-    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "jiyo.conf"))))
+    config_parser.readfp(FakeSecHead(open(os.path.join(dbdir, "Merebel.conf"))))
     return dict(config_parser.items("all"))
 
 def connect_JSON(config):
-    """Connect to a jiyo JSON-RPC server"""
+    """Connect to a Merebel JSON-RPC server"""
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
-        config['rpcport'] = 38843 if testnet else 6070
+        config['rpcport'] = 51475 if testnet else 51473
     connect = "http://%s:%s@127.0.0.1:%s"%(config['rpcuser'], config['rpcpassword'], config['rpcport'])
     try:
         result = ServiceProxy(connect)
         # ServiceProxy is lazy-connect, so send an RPC command mostly to catch connection errors,
-        # but also make sure the jiyod we're talking to is/isn't testnet:
+        # but also make sure the Merebeld we're talking to is/isn't testnet:
         if result.getmininginfo()['testnet'] != testnet:
             sys.stderr.write("RPC server at "+connect+" testnet setting mismatch\n")
             sys.exit(1)
@@ -81,36 +81,36 @@ def connect_JSON(config):
         sys.stderr.write("Error connecting to RPC server at "+connect+"\n")
         sys.exit(1)
 
-def unlock_wallet(jiyod):
-    info = jiyod.getinfo()
+def unlock_wallet(Merebeld):
+    info = Merebeld.getinfo()
     if 'unlocked_until' not in info:
         return True # wallet is not encrypted
     t = int(info['unlocked_until'])
     if t <= time.time():
         try:
             passphrase = getpass.getpass("Wallet is locked; enter passphrase: ")
-            jiyod.walletpassphrase(passphrase, 5)
+            Merebeld.walletpassphrase(passphrase, 5)
         except:
             sys.stderr.write("Wrong passphrase\n")
 
-    info = jiyod.getinfo()
+    info = Merebeld.getinfo()
     return int(info['unlocked_until']) > time.time()
 
-def list_available(jiyod):
+def list_available(Merebeld):
     address_summary = dict()
 
     address_to_account = dict()
-    for info in jiyod.listreceivedbyaddress(0):
+    for info in Merebeld.listreceivedbyaddress(0):
         address_to_account[info["address"]] = info["account"]
 
-    unspent = jiyod.listunspent(0)
+    unspent = Merebeld.listunspent(0)
     for output in unspent:
         # listunspent doesn't give addresses, so:
-        rawtx = jiyod.getrawtransaction(output['txid'], 1)
+        rawtx = Merebeld.getrawtransaction(output['txid'], 1)
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-jiyo-address
+        # This code only deals with ordinary pay-to-Merebel-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue
@@ -139,8 +139,8 @@ def select_coins(needed, inputs):
         n += 1
     return (outputs, have-needed)
 
-def create_tx(jiyod, fromaddresses, toaddress, amount, fee):
-    all_coins = list_available(jiyod)
+def create_tx(Merebeld, fromaddresses, toaddress, amount, fee):
+    all_coins = list_available(Merebeld)
 
     total_available = Decimal("0.0")
     needed = amount+fee
@@ -159,7 +159,7 @@ def create_tx(jiyod, fromaddresses, toaddress, amount, fee):
     # Note:
     # Python's json/jsonrpc modules have inconsistent support for Decimal numbers.
     # Instead of wrestling with getting json.dumps() (used by jsonrpc) to encode
-    # Decimals, I'm casting amounts to float before sending them to jiyod.
+    # Decimals, I'm casting amounts to float before sending them to Merebeld.
     #
     outputs = { toaddress : float(amount) }
     (inputs, change_amount) = select_coins(needed, potential_inputs)
@@ -170,8 +170,8 @@ def create_tx(jiyod, fromaddresses, toaddress, amount, fee):
         else:
             outputs[change_address] = float(change_amount)
 
-    rawtx = jiyod.createrawtransaction(inputs, outputs)
-    signed_rawtx = jiyod.signrawtransaction(rawtx)
+    rawtx = Merebeld.createrawtransaction(inputs, outputs)
+    signed_rawtx = Merebeld.signrawtransaction(rawtx)
     if not signed_rawtx["complete"]:
         sys.stderr.write("signrawtransaction failed\n")
         sys.exit(1)
@@ -179,10 +179,10 @@ def create_tx(jiyod, fromaddresses, toaddress, amount, fee):
 
     return txdata
 
-def compute_amount_in(jiyod, txinfo):
+def compute_amount_in(Merebeld, txinfo):
     result = Decimal("0.0")
     for vin in txinfo['vin']:
-        in_info = jiyod.getrawtransaction(vin['txid'], 1)
+        in_info = Merebeld.getrawtransaction(vin['txid'], 1)
         vout = in_info['vout'][vin['vout']]
         result = result + vout['value']
     return result
@@ -193,12 +193,12 @@ def compute_amount_out(txinfo):
         result = result + vout['value']
     return result
 
-def sanity_test_fee(jiyod, txdata_hex, max_fee):
+def sanity_test_fee(Merebeld, txdata_hex, max_fee):
     class FeeError(RuntimeError):
         pass
     try:
-        txinfo = jiyod.decoderawtransaction(txdata_hex)
-        total_in = compute_amount_in(jiyod, txinfo)
+        txinfo = Merebeld.decoderawtransaction(txdata_hex)
+        total_in = compute_amount_in(Merebeld, txinfo)
         total_out = compute_amount_out(txinfo)
         if total_in-total_out > max_fee:
             raise FeeError("Rejecting transaction, unreasonable fee of "+str(total_in-total_out))
@@ -221,15 +221,15 @@ def main():
 
     parser = optparse.OptionParser(usage="%prog [options]")
     parser.add_option("--from", dest="fromaddresses", default=None,
-                      help="addresses to get JIYOs from")
+                      help="addresses to get MERIs from")
     parser.add_option("--to", dest="to", default=None,
-                      help="address to get send JIYOs to")
+                      help="address to get send MERIs to")
     parser.add_option("--amount", dest="amount", default=None,
                       help="amount to send")
     parser.add_option("--fee", dest="fee", default="0.0",
                       help="fee to include")
     parser.add_option("--datadir", dest="datadir", default=determine_db_dir(),
-                      help="location of jiyo.conf file with RPC username/password (default: %default)")
+                      help="location of Merebel.conf file with RPC username/password (default: %default)")
     parser.add_option("--testnet", dest="testnet", default=False, action="store_true",
                       help="Use the test network")
     parser.add_option("--dry_run", dest="dry_run", default=False, action="store_true",
@@ -240,10 +240,10 @@ def main():
     check_json_precision()
     config = read_bitcoin_config(options.datadir)
     if options.testnet: config['testnet'] = True
-    jiyod = connect_JSON(config)
+    Merebeld = connect_JSON(config)
 
     if options.amount is None:
-        address_summary = list_available(jiyod)
+        address_summary = list_available(Merebeld)
         for address,info in address_summary.iteritems():
             n_transactions = len(info['outputs'])
             if n_transactions > 1:
@@ -253,14 +253,14 @@ def main():
     else:
         fee = Decimal(options.fee)
         amount = Decimal(options.amount)
-        while unlock_wallet(jiyod) == False:
+        while unlock_wallet(Merebeld) == False:
             pass # Keep asking for passphrase until they get it right
-        txdata = create_tx(jiyod, options.fromaddresses.split(","), options.to, amount, fee)
-        sanity_test_fee(jiyod, txdata, amount*Decimal("0.01"))
+        txdata = create_tx(Merebeld, options.fromaddresses.split(","), options.to, amount, fee)
+        sanity_test_fee(Merebeld, txdata, amount*Decimal("0.01"))
         if options.dry_run:
             print(txdata)
         else:
-            txid = jiyod.sendrawtransaction(txdata)
+            txid = Merebeld.sendrawtransaction(txdata)
             print(txid)
 
 if __name__ == '__main__':

@@ -62,12 +62,12 @@
         <translation>Receiving addresses</translation>
     </message>
     <message>
-        <source>These are your Merebel addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Merebel addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your MEREBEL addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your MEREBEL addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
-        <source>These are your Merebel addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your Merebel addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your MEREBEL addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your MEREBEL addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>Merebel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIPORTs from being stolen by malware infecting your computer.</source>
-        <translation>Merebel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIPORTs from being stolen by malware infecting your computer.</translation>
+        <source>MEREBEL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIs from being stolen by malware infecting your computer.</source>
+        <translation>MEREBEL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERIPORT&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERIPORT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERI&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERI&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -247,8 +247,8 @@
         <translation>Address:</translation>
     </message>
     <message>
-        <source>The Merebel address to sign the message with</source>
-        <translation>The Merebel address to sign the message with</translation>
+        <source>The MEREBEL address to sign the message with</source>
+        <translation>The MEREBEL address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Merebel address</source>
-        <translation>Sign the message to prove you own this Merebel address</translation>
+        <source>Sign the message to prove you own this MEREBEL address</source>
+        <translation>Sign the message to prove you own this MEREBEL address</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</translation>
     </message>
     <message>
-        <source>The Merebel address the message was signed with</source>
-        <translation>The Merebel address the message was signed with</translation>
+        <source>The MEREBEL address the message was signed with</source>
+        <translation>The MEREBEL address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Merebel address</source>
-        <translation>Verify the message to ensure it was signed with the specified Merebel address</translation>
+        <source>Verify the message to ensure it was signed with the specified MEREBEL address</source>
+        <translation>Verify the message to ensure it was signed with the specified MEREBEL address</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,12 +602,12 @@
         <translation>Tabs toolbar</translation>
     </message>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     <message>
-        <source>Send coins to a Merebel address</source>
-        <translation>Send coins to a Merebel address</translation>
+        <source>Send coins to a MEREBEL address</source>
+        <translation>Send coins to a MEREBEL address</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and Merebel: URIs)</source>
@@ -622,24 +622,24 @@
         <translation>Browse masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Merebel Core</source>
-        <translation>&amp;About Merebel Core</translation>
+        <source>&amp;About MEREBEL Core</source>
+        <translation>&amp;About MEREBEL Core</translation>
     </message>
     <message>
-        <source>Show information about Merebel Core</source>
-        <translation>Show information about Merebel Core</translation>
+        <source>Show information about MEREBEL Core</source>
+        <translation>Show information about MEREBEL Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for Merebel</source>
-        <translation>Modify configuration options for Merebel</translation>
+        <source>Modify configuration options for MEREBEL</source>
+        <translation>Modify configuration options for MEREBEL</translation>
     </message>
     <message>
-        <source>Sign messages with your Merebel addresses to prove you own them</source>
-        <translation>Sign messages with your Merebel addresses to prove you own them</translation>
+        <source>Sign messages with your MEREBEL addresses to prove you own them</source>
+        <translation>Sign messages with your MEREBEL addresses to prove you own them</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Merebel addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Merebel addresses</translation>
+        <source>Verify messages to ensure they were signed with specified MEREBEL addresses</source>
+        <translation>Verify messages to ensure they were signed with specified MEREBEL addresses</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -670,8 +670,8 @@
         <translation>Open Masternode configuration file</translation>
     </message>
     <message>
-        <source>Open a Merebel: URI or payment request</source>
-        <translation>Open a Merebel: URI or payment request</translation>
+        <source>Open a MEREBEL: URI or payment request</source>
+        <translation>Open a MEREBEL: URI or payment request</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -682,16 +682,16 @@
         <translation>Block explorer window</translation>
     </message>
     <message>
-        <source>Show the Merebel Core help message to get a list with possible Merebel command-line options</source>
-        <translation>Show the Merebel Core help message to get a list with possible Merebel command-line options</translation>
+        <source>Show the MEREBEL Core help message to get a list with possible MEREBEL command-line options</source>
+        <translation>Show the MEREBEL Core help message to get a list with possible MEREBEL command-line options</translation>
     </message>
     <message>
-        <source>Merebel Core client</source>
-        <translation>Merebel Core client</translation>
+        <source>MEREBEL Core client</source>
+        <translation>MEREBEL Core client</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Merebel network</source>
-        <translation><numerusform>%n active connection(s) to Merebel network</numerusform><numerusform>%n active connection(s) to Merebel network</numerusform></translation>
+        <source>%n active connection(s) to MEREBEL network</source>
+        <translation><numerusform>%n active connection(s) to MEREBEL network</numerusform><numerusform>%n active connection(s) to MEREBEL network</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -837,8 +837,8 @@ Address: %4
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Merebel2.conf).</source>
-        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Merebel2.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Merebel.conf).</source>
+        <translation>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (Merebel.conf).</translation>
     </message>
 </context>
 <context>
@@ -1138,8 +1138,8 @@ Address: %4
         <translation>Edit sending address</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Merebel address.</source>
-        <translation>The entered address "%1" is not a valid Merebel address.</translation>
+        <source>The entered address "%1" is not a valid MEREBEL address.</source>
+        <translation>The entered address "%1" is not a valid MEREBEL address.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1184,16 +1184,16 @@ Address: %4
         <translation>version</translation>
     </message>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Merebel Core</source>
-        <translation>About Merebel Core</translation>
+        <source>About MEREBEL Core</source>
+        <translation>About MEREBEL Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1239,16 +1239,16 @@ Address: %4
         <translation>Welcome</translation>
     </message>
     <message>
-        <source>Welcome to Merebel Core.</source>
-        <translation>Welcome to Merebel Core.</translation>
+        <source>Welcome to MEREBEL Core.</source>
+        <translation>Welcome to MEREBEL Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Merebel Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where Merebel Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where MEREBEL Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where MEREBEL Core will store its data.</translation>
     </message>
     <message>
-        <source>Merebel Core will download and store a copy of the Merebel block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Merebel Core will download and store a copy of the Merebel block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>MEREBEL Core will download and store a copy of the MEREBEL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>MEREBEL Core will download and store a copy of the MEREBEL block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1259,8 +1259,8 @@ Address: %4
         <translation>Use a custom data directory:</translation>
     </message>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1401,12 +1401,12 @@ Address: %4
         <translation>Enter Address to Send to</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Merebel addresses after it matures.
-To Add: enter percentage to give and Merebel address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MEREBEL addresses after it matures.
+To Add: enter percentage to give and MEREBEL address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other Merebel addresses after it matures.
-To Add: enter percentage to give and Merebel address to add to the MultiSend vector.
+        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other MEREBEL addresses after it matures.
+To Add: enter percentage to give and MEREBEL address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</translation>
     </message>
@@ -1544,48 +1544,48 @@ Please check the address and try again.</translation>
         <translation>Please select a privacy level.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 MERIPORT</source>
-        <translation>Use 2 separate masternodes to mix funds up to 10000 MERIPORT</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 MERI</source>
+        <translation>Use 2 separate masternodes to mix funds up to 10000 MERI</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 MERIPORT</source>
-        <translation>Use 8 separate masternodes to mix funds up to 10000 MERIPORT</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 MERI</source>
+        <translation>Use 8 separate masternodes to mix funds up to 10000 MERI</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 separate masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 MERIPORT to anonymize 10000 MERIPORT</source>
-        <translation>This option is the quickest and will cost about ~0.025 MERIPORT to anonymize 10000 MERIPORT</translation>
+        <source>This option is the quickest and will cost about ~0.025 MERI to anonymize 10000 MERI</source>
+        <translation>This option is the quickest and will cost about ~0.025 MERI to anonymize 10000 MERI</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 MERIPORT to anonymize 10000 MERIPORT</source>
-        <translation>This option is moderately fast and will cost about 0.05 MERIPORT to anonymize 10000 MERIPORT</translation>
+        <source>This option is moderately fast and will cost about 0.05 MERI to anonymize 10000 MERI</source>
+        <translation>This option is moderately fast and will cost about 0.05 MERI to anonymize 10000 MERI</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>This is the slowest and most secure option. Using maximum anonymity will cost</translation>
     </message>
     <message>
-        <source>0.1 MERIPORT per 10000 MERIPORT you anonymize.</source>
-        <translation>0.1 MERIPORT per 10000 MERIPORT you anonymize.</translation>
+        <source>0.1 MERI per 10000 MERI you anonymize.</source>
+        <translation>0.1 MERI per 10000 MERI you anonymize.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Obfuscation Configuration</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Merebel's configuration screen.</source>
-        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening Merebel's configuration screen.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MEREBEL's configuration screen.</source>
+        <translation>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening MEREBEL's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Merebel's configuration screen.</source>
-        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening Merebel's configuration screen.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MEREBEL's configuration screen.</source>
+        <translation>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening MEREBEL's configuration screen.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Merebel's configuration screen.</source>
-        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening Merebel's configuration screen.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MEREBEL's configuration screen.</source>
+        <translation>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening MEREBEL's configuration screen.</translation>
     </message>
 </context>
 <context>
@@ -1646,8 +1646,8 @@ Please check the address and try again.</translation>
         <translation>If you disable the spending of unconfirmed change, the change from a transaction&lt;br/&gt;cannot be used until that transaction has at least one confirmation.&lt;br/&gt;This also affects how your balance is computed.</translation>
     </message>
     <message>
-        <source>Automatically open the Merebel client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Merebel client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the MEREBEL client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the MEREBEL client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1666,12 +1666,12 @@ Please check the address and try again.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start Merebel after logging in to the system.</source>
-        <translation>Automatically start Merebel after logging in to the system.</translation>
+        <source>Automatically start MEREBEL after logging in to the system.</source>
+        <translation>Automatically start MEREBEL after logging in to the system.</translation>
     </message>
     <message>
-        <source>&amp;Start Merebel on system login</source>
-        <translation>&amp;Start Merebel on system login</translation>
+        <source>&amp;Start MEREBEL on system login</source>
+        <translation>&amp;Start MEREBEL on system login</translation>
     </message>
     <message>
         <source>This setting determines the amount of individual masternodes that an input will be anonymized through.&lt;br/&gt;More rounds of anonymization gives a higher degree of privacy, but also costs more in fees.</source>
@@ -1686,8 +1686,8 @@ Please check the address and try again.</translation>
         <translation>This amount acts as a threshold to turn off Obfuscation once it's reached.</translation>
     </message>
     <message>
-        <source>Amount of Merebel to keep anonymized</source>
-        <translation>Amount of Merebel to keep anonymized</translation>
+        <source>Amount of MEREBEL to keep anonymized</source>
+        <translation>Amount of MEREBEL to keep anonymized</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1714,8 +1714,8 @@ Please check the address and try again.</translation>
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting Merebel.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Merebel.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting MEREBEL.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting MEREBEL.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1728,8 +1728,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Merebel network through a SOCKS5 proxy.</source>
-        <translation>Connect to the Merebel network through a SOCKS5 proxy.</translation>
+        <source>Connect to the MEREBEL network through a SOCKS5 proxy.</source>
+        <translation>Connect to the MEREBEL network through a SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1883,8 +1883,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Balances</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Merebel network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Merebel network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MEREBEL network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the MEREBEL network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1927,8 +1927,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Obfuscation Balance:</translation>
     </message>
     <message>
-        <source>0 MERIPORT / 0 Rounds</source>
-        <translation>0 MERIPORT / 0 Rounds</translation>
+        <source>0 MERI / 0 Rounds</source>
+        <translation>0 MERI / 0 Rounds</translation>
     </message>
     <message>
         <source>Enabled/Disabled</source>
@@ -2096,8 +2096,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Cannot start Merebel: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Merebel address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid Merebel address or malformed URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid MEREBEL address or malformed URI parameters.</source>
+        <translation>URI cannot be parsed! This can be caused by an invalid MEREBEL address or malformed URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2182,8 +2182,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Amount</translation>
     </message>
     <message>
-        <source>Enter a Merebel address (e.g. %1)</source>
-        <translation>Enter a Merebel address (e.g. %1)</translation>
+        <source>Enter a MEREBEL address (e.g. %1)</source>
+        <translation>Enter a MEREBEL address (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2316,8 +2316,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the Merebel debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Merebel debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the MEREBEL debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the MEREBEL debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2484,8 +2484,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the Merebel RPC console.</source>
-        <translation>Welcome to the Merebel RPC console.</translation>
+        <source>Welcome to the MEREBEL RPC console.</source>
+        <translation>Welcome to the MEREBEL RPC console.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2555,12 +2555,12 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>An optional label to associate with the new receiving address.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Merebel network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Merebel network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MEREBEL network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the MEREBEL network.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Merebel network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the Merebel network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MEREBEL network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the MEREBEL network.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -2792,8 +2792,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>UTXO Size:</translation>
     </message>
     <message>
-        <source>0 MERIPORT</source>
-        <translation>0 MERIPORT</translation>
+        <source>0 MERI</source>
+        <translation>0 MERI</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2840,16 +2840,16 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Confirmation time:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uMERIPORTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERIPORTs in fee,&lt;br /&gt;while "at least" pays 1000 uMERIPORTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uMERIPORTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERIPORTs in fee,&lt;br /&gt;while "at least" pays 1000 uMERIPORTs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMERIs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERIs in fee,&lt;br /&gt;while "at least" pays 1000 uMERIs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uMERIs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERIs in fee,&lt;br /&gt;while "at least" pays 1000 uMERIs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uMERIPORTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERIPORTs in fee,&lt;br /&gt;while "total at least" pays 1000 uMERIPORTs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uMERIPORTs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERIPORTs in fee,&lt;br /&gt;while "total at least" pays 1000 uMERIPORTs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uMERIs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERIs in fee,&lt;br /&gt;while "total at least" pays 1000 uMERIs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uMERIs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uMERIs in fee,&lt;br /&gt;while "total at least" pays 1000 uMERIs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Merebel transactions than the network can process.</source>
-        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Merebel transactions than the network can process.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for MEREBEL transactions than the network can process.</source>
+        <translation>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for MEREBEL transactions than the network can process.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2952,8 +2952,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>anonymous funds</translation>
     </message>
     <message>
-        <source>Warning: Invalid Merebel address</source>
-        <translation>Warning: Invalid Merebel address</translation>
+        <source>Warning: Invalid MEREBEL address</source>
+        <translation>Warning: Invalid MEREBEL address</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -3059,8 +3059,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Pay &amp;To:</translation>
     </message>
     <message>
-        <source>The Merebel address to send the payment to</source>
-        <translation>The Merebel address to send the payment to</translation>
+        <source>The MEREBEL address to send the payment to</source>
+        <translation>The MEREBEL address to send the payment to</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3099,8 +3099,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Message:</translation>
     </message>
     <message>
-        <source>A message that was attached to the Merebel: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Merebel network.</source>
-        <translation>A message that was attached to the Merebel: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Merebel network.</translation>
+        <source>A message that was attached to the MEREBEL: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MEREBEL network.</source>
+        <translation>A message that was attached to the MEREBEL: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the MEREBEL network.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3126,8 +3126,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Merebel Core is shutting down...</source>
-        <translation>Merebel Core is shutting down...</translation>
+        <source>MEREBEL Core is shutting down...</source>
+        <translation>MEREBEL Core is shutting down...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3149,8 +3149,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
-        <source>The Merebel address to sign the message with</source>
-        <translation>The Merebel address to sign the message with</translation>
+        <source>The MEREBEL address to sign the message with</source>
+        <translation>The MEREBEL address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3181,16 +3181,16 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Merebel address</source>
-        <translation>Sign the message to prove you own this Merebel address</translation>
+        <source>Sign the message to prove you own this MEREBEL address</source>
+        <translation>Sign the message to prove you own this MEREBEL address</translation>
     </message>
     <message>
-        <source>The Merebel address the message was signed with</source>
-        <translation>The Merebel address the message was signed with</translation>
+        <source>The MEREBEL address the message was signed with</source>
+        <translation>The MEREBEL address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Merebel address</source>
-        <translation>Verify the message to ensure it was signed with the specified Merebel address</translation>
+        <source>Verify the message to ensure it was signed with the specified MEREBEL address</source>
+        <translation>Verify the message to ensure it was signed with the specified MEREBEL address</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3276,8 +3276,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3292,8 +3292,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>The Dash Core developers</translation>
     </message>
     <message>
-        <source>The Merebel Core developers</source>
-        <translation>The Merebel Core developers</translation>
+        <source>The MEREBEL Core developers</source>
+        <translation>The MEREBEL Core developers</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3840,8 +3840,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 MERIPORT.</source>
-        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 MERIPORT.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 MERI.</source>
+        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 MERI.</translation>
     </message>
 </context>
 <context>
@@ -3910,8 +3910,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Bind to given address to listen for JSON-RPC connections. Use [host]:port notation for IPv6. This option can be specified multiple times (default: bind to all interfaces)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Merebel Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Merebel Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. MEREBEL Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. MEREBEL Core is probably already running.</translation>
     </message>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
@@ -3930,8 +3930,8 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
     </message>
     <message>
-        <source>Disable all Merebel specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Disable all Merebel specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</translation>
+        <source>Disable all MEREBEL specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Disable all MEREBEL specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
@@ -3974,12 +3974,12 @@ https://www.transifex.com/Merebel-project/Merebel-project-translations</translat
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in MERIPORT/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in MERIPORT/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in MERI/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in MERI/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in MERIPORT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in MERIPORT/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in MERI/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in MERI/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -4091,7 +4091,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "MEREBEL Alert" admin@foo.com
 </source>
         <translation>To use Merebeld, or the -server option to Merebel-qt, you must set an rpcpassword in the configuration file:
 %s
@@ -4102,24 +4102,24 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
+for example: alertnotify=echo %%s | mail -s "MEREBEL Alert" admin@foo.com
 </translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Merebel Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Merebel Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. MEREBEL Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. MEREBEL Core is probably already running.</translation>
     </message>
     <message>
         <source>Unable to locate enough Obfuscation denominated funds for this transaction.</source>
         <translation>Unable to locate enough Obfuscation denominated funds for this transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 MERIPORT.</source>
-        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 MERIPORT.</translation>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 MERI.</source>
+        <translation>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 MERI.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 MERIPORT.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 MERIPORT.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 MERI.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 MERI.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4134,8 +4134,8 @@ for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
         <translation>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Merebel Core will not work properly.</source>
-        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong Merebel Core will not work properly.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong MEREBEL Core will not work properly.</source>
+        <translation>Warning: Please check that your computer's date and time are correct! If your clock is wrong MEREBEL Core will not work properly.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4166,8 +4166,8 @@ for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
         <translation>You must specify a masternodeprivkey in the configuration. Please see documentation for help.</translation>
     </message>
     <message>
-        <source>(30001 could be used only on mainnet)</source>
-        <translation>(30001 could be used only on mainnet)</translation>
+        <source>(22777 could be used only on mainnet)</source>
+        <translation>(22777 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -4178,8 +4178,8 @@ for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
         <translation>(default: 1)</translation>
     </message>
     <message>
-        <source>(must be 30001 for mainnet)</source>
-        <translation>(must be 30001 for mainnet)</translation>
+        <source>(must be 22777 for mainnet)</source>
+        <translation>(must be 22777 for mainnet)</translation>
     </message>
     <message>
         <source>Accept command line and JSON-RPC commands</source>
@@ -4282,8 +4282,8 @@ for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
         <translation>Copyright (C) 2014-%i The Dash Core Developers</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The Merebel Core Developers</source>
-        <translation>Copyright (C) 2015-%i The Merebel Core Developers</translation>
+        <source>Copyright (C) 2015-%i The MEREBEL Core Developers</source>
+        <translation>Copyright (C) 2015-%i The MEREBEL Core Developers</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -4354,8 +4354,8 @@ for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
         <translation>Error loading wallet.dat: Wallet corrupted</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of Merebel Core</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Merebel Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of MEREBEL Core</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of MEREBEL Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -4406,8 +4406,8 @@ for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in MERIPORT/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in MERIPORT/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in MERI/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in MERI/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4466,8 +4466,8 @@ for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
         <translation>Information</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Merebel Core is shutting down.</source>
-        <translation>Initialization sanity check failed. Merebel Core is shutting down.</translation>
+        <source>Initialization sanity check failed. MEREBEL Core is shutting down.</source>
+        <translation>Initialization sanity check failed. MEREBEL Core is shutting down.</translation>
     </message>
     <message>
         <source>Input is not valid.</source>
@@ -4578,8 +4578,8 @@ for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
         <translation>Enable staking functionality (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Keep N MERIPORT anonymized (default: %u)</source>
-        <translation>Keep N MERIPORT anonymized (default: %u)</translation>
+        <source>Keep N MERI anonymized (default: %u)</source>
+        <translation>Keep N MERI anonymized (default: %u)</translation>
     </message>
     <message>
         <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
@@ -5086,8 +5086,8 @@ for example: alertnotify=echo %%s | mail -s "Merebel Alert" admin@foo.com
         <translation>Wallet is locked.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Merebel Core to complete</source>
-        <translation>Wallet needed to be rewritten: restart Merebel Core to complete</translation>
+        <source>Wallet needed to be rewritten: restart MEREBEL Core to complete</source>
+        <translation>Wallet needed to be rewritten: restart MEREBEL Core to complete</translation>
     </message>
     <message>
         <source>Wallet options:</source>

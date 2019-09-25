@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=MEREBEL Core
+Comment=MEREBEL P2P Cryptocurrency
+Exec=Merebel-qt %u
+Terminal=false
+Type=Application
+Icon=Merebel128
+MimeType=x-scheme-handler/Merebel;
+Categories=Office;Finance;
+StartupWMClass=Merebel-qt
+Name[de_DE]=Merebel-qt.desktop

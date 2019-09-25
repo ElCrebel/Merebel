@@ -1,0 +1,3 @@
+usr/local/bin/Merebeld usr/bin
+usr/local/bin/Merebel-cli usr/bin
+debian/examples/Merebel.conf etc/Merebel

@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出Merebel幣的位址</translation>
+        <translation>選擇要匯出MEREBEL幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收Merebel幣的位址</translation>
+        <translation>選擇要接收MEREBEL幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>接收的位址</translation>
     </message>
     <message>
-        <source>These are your Merebel addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>這是你用來付款的 Merebel 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
+        <source>These are your MEREBEL addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>這是你用來付款的 MEREBEL 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
     </message>
     <message>
-        <source>These are your Merebel addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>這是你用來接收款項的 Merebel 位址, 建議你每次付款都使用新的位址.</translation>
+        <source>These are your MEREBEL addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>這是你用來接收款項的 MEREBEL 位址, 建議你每次付款都使用新的位址.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,16 +164,16 @@
         <translation>錢包確認加密</translation>
     </message>
     <message>
-        <source>Merebel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIPORTs from being stolen by malware infecting your computer.</source>
-        <translation>Merebel 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 MERIPORT 幣被可疑軟體或病毒偷走的風險.</translation>
+        <source>MEREBEL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIs from being stolen by malware infecting your computer.</source>
+        <translation>MEREBEL 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 MERI 幣被可疑軟體或病毒偷走的風險.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>確定要加密你的錢包?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERIPORT&lt;/b&gt;!</source>
-        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(MERIPORT)&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERI&lt;/b&gt;!</source>
+        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(MERI)&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -217,6 +217,9 @@
     </message>
 </context>
 <context>
+    <name>BanTableModel</name>
+    </context>
+<context>
     <name>Bip38ToolDialog</name>
     <message>
         <source>BIP 38 Tool</source>
@@ -227,16 +230,8 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a Merebel Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>輸入你想 BIP 38 加密的 Merebel 位址, 輸入密碼在中間欄, 按下加密按鈕來產生加密私鑰.</translation>
-    </message>
-    <message>
         <source>Address:</source>
         <translation>位址:</translation>
-    </message>
-    <message>
-        <source>The Merebel address to sign the message with</source>
-        <translation>對訊息簽名的 Merebel 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,16 +262,8 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Merebel address</source>
-        <translation>使用簽章來證明你是該  Merebel 位址的擁有者,</translation>
-    </message>
-    <message>
         <source>Encrypt &amp;Key</source>
         <translation>加密 &amp;鑰匙</translation>
-    </message>
-    <message>
-        <source>Reset all sign message fields</source>
-        <translation>重設所有已簽章訊息</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -287,20 +274,8 @@
         <translation>&amp;BIP 38 解密</translation>
     </message>
     <message>
-        <source>The Merebel address the message was signed with</source>
-        <translation>此訊息之 Merebel 位址已簽章於</translation>
-    </message>
-    <message>
-        <source>Verify the message to ensure it was signed with the specified Merebel address</source>
-        <translation>驗證訊息以確保該  Merebel 位址已被簽章</translation>
-    </message>
-    <message>
         <source>Decrypt &amp;Key</source>
         <translation>解密 &amp;鑰匙</translation>
-    </message>
-    <message>
-        <source>Reset all verify message fields</source>
-        <translation>重設所有驗證訊息的欄位</translation>
     </message>
     <message>
         <source>Decrypted Key:</source>
@@ -582,12 +557,12 @@
         <translation>Tabs 工具列</translation>
     </message>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     <message>
-        <source>Send coins to a Merebel address</source>
-        <translation>送出錢幣到 Merebel 地址</translation>
+        <source>Send coins to a MEREBEL address</source>
+        <translation>送出錢幣到 MEREBEL 地址</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and Merebel: URIs)</source>
@@ -602,24 +577,24 @@
         <translation>瀏覽 Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About Merebel Core</source>
-        <translation>&amp;關於 Merebel Core</translation>
+        <source>&amp;About MEREBEL Core</source>
+        <translation>&amp;關於 MEREBEL Core</translation>
     </message>
     <message>
-        <source>Show information about Merebel Core</source>
-        <translation>顯示 Merebel Core 相關資訊</translation>
+        <source>Show information about MEREBEL Core</source>
+        <translation>顯示 MEREBEL Core 相關資訊</translation>
     </message>
     <message>
-        <source>Modify configuration options for Merebel</source>
-        <translation>修改 Merebel 設定</translation>
+        <source>Modify configuration options for MEREBEL</source>
+        <translation>修改 MEREBEL 設定</translation>
     </message>
     <message>
-        <source>Sign messages with your Merebel addresses to prove you own them</source>
-        <translation>使用你的 Merebel 位址對訊息簽章, 來證明你是擁有者</translation>
+        <source>Sign messages with your MEREBEL addresses to prove you own them</source>
+        <translation>使用你的 MEREBEL 位址對訊息簽章, 來證明你是擁有者</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Merebel addresses</source>
-        <translation>驗證訊息簽章與 Merebel 位址吻合</translation>
+        <source>Verify messages to ensure they were signed with specified MEREBEL addresses</source>
+        <translation>驗證訊息簽章與 MEREBEL 位址吻合</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -650,8 +625,8 @@
         <translation>打開Masternode設定檔</translation>
     </message>
     <message>
-        <source>Open a Merebel: URI or payment request</source>
-        <translation>打開Merebel: 位址或付款請求 </translation>
+        <source>Open a MEREBEL: URI or payment request</source>
+        <translation>打開MEREBEL: 位址或付款請求 </translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -662,12 +637,12 @@
         <translation>區塊鏈瀏覽視窗</translation>
     </message>
     <message>
-        <source>Show the Merebel Core help message to get a list with possible Merebel command-line options</source>
-        <translation>顯示 Merebel Core 幫助訊息以取得 Merebel 命令列表選項</translation>
+        <source>Show the MEREBEL Core help message to get a list with possible MEREBEL command-line options</source>
+        <translation>顯示 MEREBEL Core 幫助訊息以取得 MEREBEL 命令列表選項</translation>
     </message>
     <message>
-        <source>Merebel Core client</source>
-        <translation>Merebel Core 客戶端</translation>
+        <source>MEREBEL Core client</source>
+        <translation>MEREBEL Core 客戶端</translation>
     </message>
     </context>
 <context>
@@ -694,17 +669,20 @@
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     </context>
 <context>
@@ -724,9 +702,13 @@
         <source>Address:</source>
         <translation>位址:</translation>
     </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(沒有標記)</translation>
+    </message>
     </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MultisigDialog</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -761,9 +743,20 @@
         <source>Alt+P</source>
         <translation>Alt+P</translation>
     </message>
+    <message>
+        <source>TextLabel</source>
+        <translation>文字標籤</translation>
+    </message>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     </context>
 <context>
     <name>QObject</name>
+    <message>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
+    </message>
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -794,6 +787,10 @@
     <message>
         <source>Label</source>
         <translation>標記</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>位址</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -836,8 +833,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The Merebel address to sign the message with</source>
-        <translation>對訊息簽名的 Merebel 位址</translation>
+        <source>The MEREBEL address to sign the message with</source>
+        <translation>對訊息簽名的 MEREBEL 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -860,16 +857,16 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Merebel address</source>
-        <translation>使用簽章來證明你是該  Merebel 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this MEREBEL address</source>
+        <translation>使用簽章來證明你是該  MEREBEL 位址的擁有者,</translation>
     </message>
     <message>
-        <source>The Merebel address the message was signed with</source>
-        <translation>此訊息之 Merebel 位址已簽章於</translation>
+        <source>The MEREBEL address the message was signed with</source>
+        <translation>此訊息之 MEREBEL 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Merebel address</source>
-        <translation>驗證訊息以確保該  Merebel 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified MEREBEL address</source>
+        <translation>驗證訊息以確保該  MEREBEL 位址已被簽章</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -907,8 +904,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>Merebel Core</source>
-        <translation>Merebel Core</translation>
+        <source>MEREBEL Core</source>
+        <translation>MEREBEL Core</translation>
     </message>
     </context>
 <context>
@@ -971,7 +968,7 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZMeriControlDialog</name>
     </context>
 <context>
     <name>Merebel-core</name>

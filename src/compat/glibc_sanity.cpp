@@ -1,4 +1,5 @@
-// Copyright (c) 2009-2014 The Bitcoin Core developers
+// Copyright (c) 2009-2017 The Bitcoin Core developers
+// Copyright (c) 2016-2018 The MEREBEL developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +9,6 @@
 
 #include <cstddef>
 
-#undef HAVE_SYS_SELECT_H
 #if defined(HAVE_SYS_SELECT_H)
 #include <sys/select.h>
 #endif

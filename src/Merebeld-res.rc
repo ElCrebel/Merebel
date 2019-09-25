@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Merebel"
-            VALUE "FileDescription",    "Merebeld (OSS daemon/client for Merebel)"
+            VALUE "CompanyName",        "MEREBEL"
+            VALUE "FileDescription",    "Merebeld (OSS daemon/client for MEREBEL)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "Merebeld"
             VALUE "LegalCopyright",     COPYRIGHT_STR

@@ -6,14 +6,20 @@
         <file alias="da">locale/Merebel_da.qm</file>
         <file alias="de">locale/Merebel_de.qm</file>
         <file alias="en">locale/Merebel_en.qm</file>
+        <file alias="en_GB">locale/Merebel_en_GB.qm</file>
         <file alias="en_US">locale/Merebel_en_US.qm</file>
+        <file alias="eo">locale/Merebel_eo.qm</file>
         <file alias="es">locale/Merebel_es.qm</file>
+        <file alias="es_ES">locale/Merebel_es_ES.qm</file>
         <file alias="fi">locale/Merebel_fi.qm</file>
         <file alias="fr_FR">locale/Merebel_fr_FR.qm</file>
+        <file alias="hi_IN">locale/Merebel_hi_IN.qm</file>
         <file alias="hr">locale/Merebel_hr.qm</file>
+        <file alias="hr_HR">locale/Merebel_hr_HR.qm</file>
         <file alias="it">locale/Merebel_it.qm</file>
         <file alias="ja">locale/Merebel_ja.qm</file>
         <file alias="ko_KR">locale/Merebel_ko_KR.qm</file>
+        <file alias="lt_LT">locale/Merebel_lt_LT.qm</file>
         <file alias="nl">locale/Merebel_nl.qm</file>
         <file alias="pl">locale/Merebel_pl.qm</file>
         <file alias="pt">locale/Merebel_pt.qm</file>
@@ -24,6 +30,7 @@
         <file alias="sv">locale/Merebel_sv.qm</file>
         <file alias="tr">locale/Merebel_tr.qm</file>
         <file alias="uk">locale/Merebel_uk.qm</file>
+        <file alias="vi">locale/Merebel_vi.qm</file>
         <file alias="zh_CN">locale/Merebel_zh_CN.qm</file>
         <file alias="zh_TW">locale/Merebel_zh_TW.qm</file>
     </qresource>

@@ -1,0 +1,8 @@
+/usr/bin/Merebel-cli		--	gen_context(system_u:object_r:Merebel_exec_t,s0)
+/usr/sbin/Merebeld		--	gen_context(system_u:object_r:Merebel_exec_t,s0)
+/usr/lib(64)?/Merebel/Merebeld		--	gen_context(system_u:object_r:Merebel_exec_t,s0)
+
+/etc/Merebel(/.*)?		gen_context(system_u:object_r:Merebel_conf_t,s0)
+/var/lib/Merebel(/.*)?		gen_context(system_u:object_r:Merebel_var_lib_t,s0)
+
+(/var)?/run/Merebeld(/.*)?   gen_context(system_u:object_r:Merebel_var_run_t,s0)

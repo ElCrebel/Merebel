@@ -62,12 +62,12 @@
         <translation>Адреса отримання</translation>
     </message>
     <message>
-        <source>These are your Merebel addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Це ваші Merebel-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
+        <source>These are your MEREBEL addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Це ваші MEREBEL-адреси для надсилання платежів. Завжди перевіряйте суму та адресу одержувача перед відправленням монет.</translation>
     </message>
     <message>
-        <source>These are your Merebel addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Це ваші Merebel адреси для отримання платежів. Для кожної транзакції рекомендується використовувати нову адресу одержувача.</translation>
+        <source>These are your MEREBEL addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Це ваші MEREBEL адреси для отримання платежів. Для кожної транзакції рекомендується використовувати нову адресу одержувача.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -136,10 +136,6 @@
         <translation>Для ввімкнення тривіальної відправки коштів при скомпрометуванні операційної системи. Не забезпечує реальної безпеки.</translation>
     </message>
     <message>
-        <source>For anonymization and staking only</source>
-        <translation>Лише для анонімності</translation>
-    </message>
-    <message>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Введіть нове кодове слово гамамнця. &lt;br/&gt;Будь ласка, використовуйте кодове слово з &lt;b&gt;десяти і більше хаотичних символів&lt;/b&gt;, або &lt;b&gt;восьми і більше слів &lt;/b&gt;.</translation>
     </message>
@@ -176,21 +172,24 @@
         <translation>Підтвердження шифрування гаманця</translation>
     </message>
     <message>
-        <source>Merebel will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIPORTs from being stolen by malware infecting your computer.</source>
-        <translation>Merebel зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші MERIPORT'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
+        <source>MEREBEL will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your MERIs from being stolen by malware infecting your computer.</source>
+        <translation>MEREBEL зараз закриється, щоб завершити процес шифрування. Пам'ятайте, що шифрування гаманця не може повністю захистити ваші MERI'и від крадіжки зловмисним програмним забезпеченням, що заражає ваш комп'ютер.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Ви впевнені, що хочете зашифрувати Ваш гаманець?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERIPORT&lt;/b&gt;!</source>
-        <translation>Попередження: Якщо після шифрування гаманця Ви &lt;b&gt;загубите кодове слово, то ви втратите всі Ваші MERIPORT'и&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR MERI&lt;/b&gt;!</source>
+        <translation>Попередження: Якщо після шифрування гаманця Ви &lt;b&gt;загубите кодове слово, то ви втратите всі Ваші MERI'и&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
         <translation>Гаманець зашифровано</translation>
     </message>
+    </context>
+<context>
+    <name>BanTableModel</name>
     </context>
 <context>
     <name>Bip38ToolDialog</name>
@@ -222,6 +221,9 @@
     <name>FreespaceChecker</name>
     </context>
 <context>
+    <name>GovernancePage</name>
+    </context>
+<context>
     <name>HelpMessageDialog</name>
     </context>
 <context>
@@ -236,9 +238,13 @@
     </context>
 <context>
     <name>MultiSendDialog</name>
+    <message>
+        <source>(no label)</source>
+        <translation>(без міток)</translation>
+    </message>
     </context>
 <context>
-    <name>ObfuscationConfig</name>
+    <name>MultisigDialog</name>
     </context>
 <context>
     <name>OpenURIDialog</name>
@@ -257,6 +263,9 @@
     </context>
 <context>
     <name>PrivacyDialog</name>
+    </context>
+<context>
+    <name>ProposalFrame</name>
     </context>
 <context>
     <name>QObject</name>
@@ -286,6 +295,10 @@
     <message>
         <source>Label</source>
         <translation>Мітка</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Адреса</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -367,7 +380,7 @@
     </message>
     </context>
 <context>
-    <name>ZPhrControlDialog</name>
+    <name>ZMeriControlDialog</name>
     </context>
 <context>
     <name>Merebel-core</name>

@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The MERI Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The MEREBEL Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,10 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>MERI-Qt</string>
+  <string>MEREBEL-Qt</string>
+  
+  <key>CFBundleName</key>
+  <string>MEREBEL-Qt</string>
+
+  <key>LSHasLocalizedDisplayName</key>
+  <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>io.jiyo.MERI-Qt</string>
+  <string>io.Merebel.Merebel-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.jiyo.MERIPayment</string>
+      <string>io.Merebel.MerebelPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>jiyo</string>
+        <string>Merebel</string>
       </array>
     </dict>
   </array>
@@ -52,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.jiyo.paymentrequest</string>
+      <string>io.Merebel.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>MERI payment request</string>
+      <string>Merebel payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-jiyo-payment-request</string>
+        <string>application/x-Merebel-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>jiyopaymentrequest</string>
+          <string>Merebelpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.jiyo.paymentrequest</string>
+        <string>io.Merebel.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>
