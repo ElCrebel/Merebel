@@ -110,7 +110,7 @@ QMessageBox {
 }
 
 QProgressBar {
-    color:rgba(255, 255, 255, 0.5);
+    color: #736e91;
     border: 0px;
     border-radius: 5px;
     background-color: transparent;
@@ -121,7 +121,6 @@ QProgressBar {
 QProgressBar::chunk {
     background-color: #ffce61;
     width: 20px;
-    color: #3c394b;
 }
 
 QLabel#progressBarLabel {
@@ -474,9 +473,9 @@ QHeaderView::section:last {
     color:rgba(255, 255, 255, 0.5);
 }
 
-/*.QTableView::section{*/
-    /*color:rgba(255, 255, 255, 0.5);*/
-/*}*/
+.QTableView::section{
+    color:#3c394b;
+}
 
 QTableView::item { /* Table Item */
     background-color:#43454f;
@@ -781,26 +780,26 @@ QWidget#PrivacyDialog QLabel {
     border: 0px solid #000;
 }
 
-QWidget#PrivacyDialog QLabel#zMINCLabel {
+QWidget#PrivacyDialog QLabel#zMERILabel {
     font-size:14px;
     color:#3c394b;
     background-color:#7866aa;
 }
 
-QWidget#PrivacyDialog QLabel#oMINCLabel {
+QWidget#PrivacyDialog QLabel#oMERILabel {
     font-size:14px;
     color:#3c394b;
     background-color:#7866aa;
 }
 
-QWidget#PrivacyDialog QLabel#labelzMINCActions {
+QWidget#PrivacyDialog QLabel#labelzMERIActions {
     font-size:15px;
     color:rgba(255, 255, 255, 0.5);
     background-color:transparent;
     font-weight: bold;
 }
 
-QWidget#PrivacyDialog QLabel#labelzMINCStats {
+QWidget#PrivacyDialog QLabel#labelzMERIStats {
     font-size:15px;
     color:rgba(255, 255, 255, 0.5);
     background-color:transparent;
@@ -836,6 +835,7 @@ QWidget#PrivacyDialog QProgressBar#obfuscationProgress { /* Obfuscation Completi
 
 QWidget#PrivacyDialog QProgressBar#obfuscationProgress::chunk {
     background-color: #382f44;
+    color:#3c394b;
     width:1px;
 }
 
@@ -897,13 +897,16 @@ QDialog#RPCConsole QWidget#tab_info QLabel#label_11, QDialog#RPCConsole QWidget#
     min-width:180px;
 }
 
-QDialog#RPCConsole QWidget#tab_peers QLabel#peerHeading { /* Peers Info Header */
-    color:#382f44;
+/* Peers Info Header */
+QDialog#RPCConsole QWidget#tab_peers QLabel#peerHeading { 
+    color:rgb(178, 176, 176);
 }
 
-QDialog#RPCConsole QTableView#peerWidget::item { /* Peers Table Items */
-    color:rgba(255, 255, 255, 0.5);
-}
+/* Peers Table Items */
+/* QDialog#RPCConsole QTableView#peerWidget::item { 
+    color:rgb(178, 176, 176);
+} */
+
 
 QDialog#RPCConsole QPushButton#openDebugLogfileButton {
     max-width:60px;
