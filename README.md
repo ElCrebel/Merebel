@@ -38,15 +38,14 @@ More information at [Merebel.org](http://www.Merebel.org)
 <tr><td>45001-63000</td><td>50% (3,5 MERI)</td><td>50% (3,5 MERI)</td><td>N/A</td></tr>
 </table>
 
-### PoS Rewards Breakdown
+### MN | PoS Rewards Breakdown
 
 <table>
-<th>Phase</th><th>Block Height</th><th>Reward</th><th>85% Masternodes - 15% Stakers</th><th>Budget</th>
-<tr><td>Phase 0</td><td>259201-302399</td><td>10 MERI</td><td>10 MERI</td><td>N/A</td></tr>
-<tr><td>Phase 1</td><td>302400-345599</td><td>7 MERI</td><td>7 MERI</td><td>N/A</td></tr>
-<tr><td>Phase 2</td><td>345600-388799</td><td>12 MERI</td><td>12 MERI</td><td>N/A</td></tr>
-<tr><td>Phase 3</td><td>388800-431999</td><td>14 MERI</td><td>14 MERI</td><td>N/A</td></tr>
-<tr><td>Phase 4</td><td>?-?</td><td>16 MERI</td><td>16 MERI</td><td>N/A</td></tr>
+<th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes | Stakers</th><th>Budget</th>
+<tr><td>Phase 0</td><td>63001-151000</td><td>7 MERI</td><td>5.95 MERI | 1.05 MERI</td><td>N/A</td></tr>
+<tr><td>Phase 1</td><td>151001-230000 </td><td>12 MERI</td><td>10.2 MERI | 1.8 MERI</td><td>N/A</td></tr>
+<tr><td>Phase 2</td><td>230001-?</td><td>14 MERI</td><td>11.9 MERI | 2.1 MERI</td><td>N/A</td></tr>
+
 
 </table>
 # Merebel-3.4
