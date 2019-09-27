@@ -44,7 +44,7 @@ More information at [Merebel.org](http://www.Merebel.org)
 <th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes | Stakers</th><th>Budget</th>
 <tr><td>Phase 0</td><td>63001-151000</td><td>7 MERI</td><td>5.95 MERI | 1.05 MERI</td><td>N/A</td></tr>
 <tr><td>Phase 1</td><td>151001-230000 </td><td>12 MERI</td><td>10.2 MERI | 1.8 MERI</td><td>N/A</td></tr>
-<tr><td>Phase 2</td><td>230001-?</td><td>14 MERI</td><td>11.99 MERI | 2.01 MERI</td><td>N/A</td></tr>
+<tr><td>Phase 2</td><td>230001-?</td><td>14 MERI</td><td>11.9 MERI | 2.1 MERI</td><td>N/A</td></tr>
 
 
 </table>
