@@ -191,9 +191,14 @@ public:
         assert(hashGenesisBlock == uint256("0x000002f888ed258385116bb9e69606005d6873cbdb0437867377fcbda98353c3"));
         assert(genesis.hashMerkleRoot == uint256("0xfd432ffd896b1e6b4f7bba713e0037e1ba4b5bf81686efeb40344461f3b43bdb"));
 
-       vSeeds.push_back(CDNSSeedData("5.135.125.73", "176.9.206.187"));
-       vSeeds.push_back(CDNSSeedData("94.156.174.69", "5.9.178.187"));
-       vSeeds.push_back(CDNSSeedData("94.156.174.71", "216.155.145.149"));
+        //new seednodes for v3.4.2++
+       vSeeds.push_back(CDNSSeedData("sn1.merebel.org", "sn1.merebel.org"));
+       vSeeds.push_back(CDNSSeedData("sn2.merebel.org", "sn2.merebel.org"));
+       vSeeds.push_back(CDNSSeedData("sn3.merebel.org", "sn3.merebel.org"));
+       vSeeds.push_back(CDNSSeedData("sn4.merebel.org", "sn4.merebel.org"));
+       vSeeds.push_back(CDNSSeedData("sn5.merebel.org", "sn5.merebel.org"));
+       vSeeds.push_back(CDNSSeedData("sn6.merebel.org", "sn6.merebel.org"));
+
        vSeeds.push_back(CDNSSeedData("seedsmeri.minnodes.io", "seedsmeri.minnodes.io"));
                 
 		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 51);
