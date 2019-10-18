@@ -198,18 +198,18 @@ bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, Accumulat
         return error("%s: height is below zerocoin activated", __func__);
 
     //On a specific block, a recalculation of the accumulators will be forced
-    if (nHeight == Params().Zerocoin_Block_RecalculateAccumulators() && Params().NetworkID() != CBaseChainParams::REGTEST) {
-        mapAccumulators.Reset();
-        if (!mapAccumulators.Load(chainActive[Params().Zerocoin_Block_LastGoodCheckpoint()]->nAccumulatorCheckpoint))
-            return error("%s: failed to reset to previous checkpoint when recalculating accumulators", __func__);
+    // if (nHeight == Params().Zerocoin_Block_RecalculateAccumulators() && Params().NetworkID() != CBaseChainParams::REGTEST) {
+    //     mapAccumulators.Reset();
+    //     if (!mapAccumulators.Load(chainActive[Params().Zerocoin_Block_LastGoodCheckpoint()]->nAccumulatorCheckpoint))
+    //         return error("%s: failed to reset to previous checkpoint when recalculating accumulators", __func__);
 
-        // Erase the checkpoints from the period of time that bad mints were being made
-        if (!EraseCheckpoints(Params().Zerocoin_Block_LastGoodCheckpoint() + 1, nHeight))
-            return error("%s : failed to erase Checkpoints while recalculating checkpoints", __func__);
+    //     // Erase the checkpoints from the period of time that bad mints were being made
+    //     if (!EraseCheckpoints(Params().Zerocoin_Block_LastGoodCheckpoint() + 1, nHeight))
+    //         return error("%s : failed to erase Checkpoints while recalculating checkpoints", __func__);
 
-        nHeightCheckpoint = Params().Zerocoin_Block_LastGoodCheckpoint();
-        return true;
-    }
+    //     nHeightCheckpoint = Params().Zerocoin_Block_LastGoodCheckpoint();
+    //     return true;
+    // }
 
     if (nHeight >= Params().Zerocoin_Block_V2_Start()) {
         //after v2_start, accumulators need to use v2 params
@@ -229,11 +229,11 @@ bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, Accumulat
     }
 
     //Use the previous block's checkpoint to initialize the accumulator's state
-    uint256 nCheckpointPrev = chainActive[nHeight - 1]->nAccumulatorCheckpoint;
-    if (nCheckpointPrev == 0)
-        mapAccumulators.Reset();
-    else if (!mapAccumulators.Load(nCheckpointPrev))
-        return error("%s: failed to reset to previous checkpoint", __func__);
+    // uint256 nCheckpointPrev = chainActive[nHeight - 1]->nAccumulatorCheckpoint;
+    // if (nCheckpointPrev == 0)
+    //     mapAccumulators.Reset();
+    // else if (!mapAccumulators.Load(nCheckpointPrev))
+    //     return error("%s: failed to reset to previous checkpoint", __func__);
 
     nHeightCheckpoint = nHeight;
     return true;
