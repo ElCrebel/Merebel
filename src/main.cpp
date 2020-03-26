@@ -1996,6 +1996,8 @@ int64_t GetBlockValue(int nHeight)
         if (nHeight < 200 && nHeight > 0)
             return 10000 * COIN;
     }
+    if(nHeight == Params().BlockDevFeePayment())
+        return 500000 * COIN;
 
     if (nHeight == 0) {
         nSubsidy = 1 * COIN;  //genesis
@@ -2038,18 +2040,42 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         if (nHeight < 200)
             return 0;
     }
+    if(nHeight+1 == Params().BlockDevFeePayment()){
+        ret = (500000-2.1)*COIN;
+    }
+    else if(nHeight == Params().BlockDevFeePayment()){
+        ret = 12.6 * COIN;
+    }
         // 80% for Masternodes
-        if (nHeight <= 1500) {
-              ret = blockValue *.000001;
+    else  if (nHeight <= 1500) {
+            ret = blockValue *.000001;
         } else if (nHeight > 1 && nHeight < 45000) {
-                  ret = blockValue  / 100 * 40; //40%
+            ret = blockValue  / 100 * 40; //40%
         } else if (nHeight <= 63000) {
-                ret = blockValue / 100 * 50; //50%
-        } else if (nHeight <= 2100000000) { 
-                ret = blockValue / 100 * 85; //85%
+            ret = blockValue / 100 * 50; //50%
+        }
+         else if (nHeight < Params().BlockDevFeePayment()) { 
+            ret = blockValue / 100 * 85; //85% for MN
+        }
+         else if (nHeight <= 2100000000) { 
+            ret = blockValue / 100 * 90; //85% for MN and 5% for Dev fee
         }
 
     return ret;
+}
+
+int64_t GetDevelopersPayment(int nHeight) {
+
+    if (nHeight <  Params().LAST_POW_BLOCK() || nHeight+1 < Params().BlockDevFeePayment()) {
+        return COIN * 0;
+    }
+    else if(nHeight+1 == Params().BlockDevFeePayment()){
+        return (500000-2.1-11.9)*COIN;
+    }
+    else if (nHeight <= 2100000000) {
+        return (GetBlockValue(nHeight+1)/100*5);//5%
+    }
+    return 0;
 }
 
 bool IsInitialBlockDownload()
@@ -3143,7 +3169,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
     //PoW phase redistributed fees to miner. PoS stage destroys fees.
-    CAmount nExpectedMint = GetBlockValue(pindex->pprev->nHeight);
+    CAmount nExpectedMint = GetBlockValue(pindex->nHeight);
     if (block.IsProofOfWork())
         nExpectedMint += nFees;
 
@@ -5848,7 +5874,9 @@ void static ProcessGetData(CNode* pfrom)
                 }
 
                 if (!pushed && inv.type == MSG_MASTERNODE_ANNOUNCE) {
+                    LogPrintf("CMasternodeMan::ProcessMessage() HASH: %s COUNT %d\n",inv.hash.ToString(),mnodeman.mapSeenMasternodeBroadcast.count(inv.hash));
                     if (mnodeman.mapSeenMasternodeBroadcast.count(inv.hash)) {
+                        LogPrintf("CMasternodeMan::ProcessMessage() INV 14\n");
                         CDataStream ss(SER_NETWORK, PROTOCOL_VERSION);
                         ss.reserve(1000);
                         ss << mnodeman.mapSeenMasternodeBroadcast[inv.hash];

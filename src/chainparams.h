@@ -141,6 +141,7 @@ public:
     int Block_Enforce_Invalid() const { return nBlockEnforceInvalidUTXO; }
     int Zerocoin_Block_V2_Start() const { return nBlockZerocoinV2; }
     bool IsStakeModifierV2(const int nHeight) const { return nHeight >= nBlockStakeModifierlV2; }
+    int BlockDevFeePayment() const { return nBlockDevFeePayment; }
 
     // fake serial attack
     int Zerocoin_Block_EndFakeSerial() const { return nFakeSerialBlockheightEnd; }
@@ -153,6 +154,11 @@ public:
 
     /** Masternode colleteral value */
     int MasternodeCollateral() const { return  nMasternodeCollateral; }
+    /** Address of developers fee */
+    std::string DevRewardAddress() const
+    {
+        return strDevFeeAddress;
+    }
 
 protected:
     CChainParams() {}
@@ -228,12 +234,14 @@ protected:
     int nBlockDoubleAccumulated;
     int nPublicZCSpends;
     int nBlockStakeModifierlV2;
+    int nBlockDevFeePayment;
 
     // fake serial attack
     int nFakeSerialBlockheightEnd = 0;
     CAmount nSupplyBeforeFakeSerial = 0;
 
     int nMasternodeCollateral;
+    std::string strDevFeeAddress;
 };
 
 /**

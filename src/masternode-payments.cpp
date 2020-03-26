@@ -7,6 +7,7 @@
 #include "addrman.h"
 #include "chainparams.h"
 #include "masternode-budget.h"
+#include "masternode-devbudget.h"
 #include "masternode-sync.h"
 #include "masternodeman.h"
 #include "obfuscation.h"
@@ -251,6 +252,12 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
         }
     }
 
+    // Check devfee payment
+    if (!devbudget.IsTransactionValid(txNew, nBlockHeight)) {
+        LogPrint("masternode","Invalid dev budget payment detected %s\n", txNew.ToString().c_str());
+        return false;
+    }
+
     // If we end here the transaction was either TrxValidationStatus::InValid and Budget enforcement is disabled, or
     // a double budget payment (status = TrxValidationStatus::DoublePayment) was detected, or no/not enough masternode
     // votes (status = TrxValidationStatus::VoteThreshold) for a finalized budget were found
@@ -278,6 +285,7 @@ void FillBlockPayee(CMutableTransaction& txNew, CAmount nFees, bool fProofOfStak
         budget.FillBlockPayee(txNew, nFees, fProofOfStake);
     } else {
         masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake, fZMERIStake);
+        devbudget.FillBlockPayee(txNew, nFees, fProofOfStake);
     }
 }
 
@@ -557,7 +565,7 @@ bool CMasternodeBlockPayees::IsTransactionValid(const CTransaction& txNew)
         nMasternode_Drift_Count = mnodeman.size() + Params().MasternodeCountDrift();
     }
 
-    CAmount requiredMasternodePayment = GetMasternodePayment(nBlockHeight, nReward, nMasternode_Drift_Count, txNew.HasZerocoinSpendInputs());
+    CAmount requiredMasternodePayment = GetMasternodePayment(nBlockHeight, nReward, nMasternode_Drift_Count, txNew.HasZerocoinSpendInputs()) - GetDevelopersPayment(nBlockHeight);
 
     //require at least 6 signatures
     for (CMasternodePayee& payee : vecPayments)

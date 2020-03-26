@@ -141,6 +141,7 @@ public:
         nMaxMoneyOut = 30000000 * COIN; //30,000,000
 
         nMasternodeCollateral = 3000;
+        strDevFeeAddress = "MZsuRA4tPg9f4t8GPeJv4nW1Emas8sAhvs";
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 63000;
@@ -155,6 +156,7 @@ public:
         nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
         nBlockZerocoinV2 = 312110; //!> The block that zerocoin v2 becomes active - roughly Tuesday, May 8, 2018 4:00:00 AM GMT
         nBlockStakeModifierlV2 = 312110;
+        nBlockDevFeePayment = 429885;
         
         
         /* 
