@@ -75,7 +75,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
         } else {
             //Masternode reward
             CTxDestination destMN;
-            int nIndexMN = wtx.vout.size() - 1;
+            int nIndexMN = wtx.vout.size()==3?wtx.vout.size() - 1:wtx.vout.size() - 2;
             if (ExtractDestination(wtx.vout[nIndexMN].scriptPubKey, destMN) && IsMine(*wallet, destMN)) {
                 isminetype mine = wallet->IsMine(wtx.vout[nIndexMN]);
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
@@ -86,7 +86,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
              // Develop fee
             CTxDestination destDev;
             int nIndexDevBudget = wtx.vout.size() - 1;
-            if (ExtractDestination(wtx.vout[nIndexDevBudget].scriptPubKey, destDev) && IsMine(*wallet, destDev)) {
+            if (ExtractDestination(wtx.vout[nIndexDevBudget].scriptPubKey, destDev) && IsMine(*wallet, destDev) && wtx.vout.size() > 3) {
                 isminetype mine = wallet->IsMine(wtx.vout[nIndexDevBudget]);
                 sub.involvesWatchAddress = mine & ISMINE_WATCH_ONLY;
                 sub.type = TransactionRecord::Generated;
